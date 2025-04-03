@@ -14,4 +14,4 @@ jobs:
           message: "Hello from A repository!"
 
       - name: Echo the result from B repository
-        run: echo ${{ steps.custom_action.outputs.result }}
+        run: echo Receided output':' ${{ steps.custom_action.outputs.result }}
