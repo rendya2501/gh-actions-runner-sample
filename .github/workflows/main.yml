@@ -7,7 +7,11 @@ jobs:
   test_custom_action:
     runs-on: ubuntu-latest
     steps:
-      - name: Use custom action from B repo
+      - name: Use custom action
+        id: custom_action
         uses: rendya2501/gh-actions-custom-action-sample@main
         with:
           message: "Hello from A repository!"
+
+      - name: Echo the result from B repository
+        run: echo "Received output: ${{ steps.custom_action.outputs.result }}"
