@@ -7,7 +7,7 @@ jobs:
   test_custom_action:
     runs-on: ubuntu-latest
     steps:
-      - name: Use custom action
+      - name: Execute B repository custom action
         id: custom_action
         uses: rendya2501/gh-actions-custom-action-sample@main
         with:
