@@ -11,7 +11,7 @@
 `.github/workflows/main.yml` を作成し、以下のように設定します。
 
 ```yaml
-name: Run Custom Action with Input
+name: Run Custom Action
 
 on:
   workflow_dispatch:
