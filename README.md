@@ -3,7 +3,7 @@
 このリポジトリは、外部リポジトリに定義されたカスタム GitHub Action を実行するサンプルです。
 
 ## 📌 概要
-- Bリポジトリ（[`gh-actions-custom-action-sample`](https://github.com/your-username/gh-actions-custom-action-sample)）のカスタムアクションを呼び出します。
+- Bリポジトリ（[`gh-actions-custom-action-sample`](https://github.com/rendya2501/gh-actions-custom-action-sample)）のカスタムアクションを呼び出します。
 - `with:` を使ってメッセージを渡し、そのメッセージをログに表示します。
 
 ## 🚀 使用方法
