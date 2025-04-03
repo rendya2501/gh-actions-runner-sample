@@ -10,6 +10,6 @@ jobs:
       - uses: actions/checkout@v4
       - name: execute
         id: github-actions-test
-        uses: rendya2501/github-actions-test@v0.1.0
+        uses: rendya2501/github-actions-test@v0.1.1
         with:
           output_directory_path_template: "./articles/{{publish|date.to_string('%Y/%m')}}/{{slug}}"
