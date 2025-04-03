@@ -1,0 +1,15 @@
+name: action
+
+on:
+  workflow_dispatch:
+
+jobs:
+  notion_to_markdown:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: execute
+        id: github-actions-test
+        uses: rendya2501/github-actions-test@v0.1.0
+        with:
+          output_directory_path_template: "./articles/{{publish|date.to_string('%Y/%m')}}/{{slug}}"
