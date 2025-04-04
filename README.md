@@ -41,6 +41,8 @@ script_result: Script Processed: Hello from A repository!
 echo_result: Echo Processed: Hello from A repository! (hogehoge)
 ```
 
+![image.png](attachment:1e406882-c87b-442e-b5f3-83a7db937808:image.png)
+
 ## 📂 リポジトリ構成
 
 ```
