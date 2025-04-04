@@ -20,18 +20,25 @@ jobs:
   test_custom_action:
     runs-on: ubuntu-latest
     steps:
-      - name: Use custom action with message
-        uses: your-username/gh-actions-custom-action-sample@main
+      - name: Execute B repository custom action
+        id: custom_action
+        uses: rendya2501/gh-actions-custom-action-sample@main
         with:
           message: "Hello from A repository!"
+
+      - name: Echo outputs
+        run: |
+          echo "script_result: ${{ steps.custom_action.outputs.script_result }}"
+          echo "echo_result: ${{ steps.custom_action.outputs.echo_result }}"
 ```
 
 ## ✅ 実行結果
-
-GitHub Actions のログに以下のように表示されます。
+ワークフロー実行後、ログには以下のように表示されます。
 
 ```
 Received message: Hello from A repository!
+script_result: Script Processed: Hello from A repository!
+echo_result: Echo Processed: Hello from A repository! (hogehoge)
 ```
 
 ## 📂 リポジトリ構成
@@ -40,5 +47,5 @@ Received message: Hello from A repository!
 gh-actions-runner-sample/
 └── .github/
     └── workflows/
-        └── main.yml　# Workflow definition
+        └── run-custom-action.yml # Workflow definition
 ```
