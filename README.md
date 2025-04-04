@@ -6,9 +6,18 @@
 - Bリポジトリ（[`gh-actions-custom-action-sample`](https://github.com/rendya2501/gh-actions-custom-action-sample)）のカスタムアクションを呼び出します。
 - `with:` を使ってメッセージを渡し、そのメッセージをログに表示します。
 
+## 📂 リポジトリ構成
+
+```
+gh-actions-runner-sample/
+└── .github/
+    └── workflows/
+        └── run-custom-action.yml # Workflow definition
+```
+
 ## 🚀 使用方法
 
-`.github/workflows/main.yml` を作成し、以下のように設定します。
+`.github/workflows/run-custom-action.yml` を作成し、以下のように設定します。
 
 ```yaml
 name: Run Custom Action
@@ -42,12 +51,3 @@ echo_result: Echo Processed: Hello from A repository! (hogehoge)
 ```
 
 ![image](https://github.com/user-attachments/assets/8d5feda0-e7de-4cf5-93e2-387002f71019)
-
-## 📂 リポジトリ構成
-
-```
-gh-actions-runner-sample/
-└── .github/
-    └── workflows/
-        └── run-custom-action.yml # Workflow definition
-```
