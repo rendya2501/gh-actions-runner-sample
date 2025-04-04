@@ -41,7 +41,7 @@ script_result: Script Processed: Hello from A repository!
 echo_result: Echo Processed: Hello from A repository! (hogehoge)
 ```
 
-![](https://file.notion.so/f/f/a7a37f0e-edd5-442d-949d-bd0b47b0b9d4/1e406882-c87b-442e-b5f3-83a7db937808/image.png?table=block&id=1cb4a91b-2eac-8009-ad60-ea90b4d476cf&spaceId=a7a37f0e-edd5-442d-949d-bd0b47b0b9d4&expirationTimestamp=1743811200000&signature=cQ10FNOI0KTrvqXLTRBpekO1q82zlAFQjrB71wxj2Do&downloadName=image.png)
+![image](https://github.com/user-attachments/assets/8d5feda0-e7de-4cf5-93e2-387002f71019)
 
 ## 📂 リポジトリ構成
 
