@@ -33,21 +33,22 @@ jobs:
         id: custom_action
         uses: rendya2501/gh-actions-custom-action-sample@main
         with:
-          message: "Hello from A repository!"
+          message: "A repository Payload"
 
-      - name: Echo outputs
+      - name: Echo the result from B repository
         run: |
-          echo "script_result: ${{ steps.custom_action.outputs.script_result }}"
-          echo "echo_result: ${{ steps.custom_action.outputs.echo_result }}"
+          echo "Received script output: ${{ steps.custom_action.outputs.script_result }}"
+          echo "Received echo output: ${{ steps.custom_action.outputs.echo_result }}"
+          echo "Received csharp output: ${{ steps.custom_action.outputs.csharp_result }}"
 ```
 
 ## ✅ 実行結果
 ワークフロー実行後、ログには以下のように表示されます。
 
 ```
-Received message: Hello from A repository!
-script_result: Script Processed: Hello from A repository!
-echo_result: Echo Processed: Hello from A repository! (hogehoge)
+Received script output: Script Processed: A repository Payload
+Received echo output: Echo Processed: A repository Payload (hogehoge)
+Received csharp output: csharp Processed:Hello from repository B!:A repository Payload
 ```
 
 ![image](https://github.com/user-attachments/assets/8d5feda0-e7de-4cf5-93e2-387002f71019)
