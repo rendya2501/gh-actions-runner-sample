@@ -1,4 +1,4 @@
-# GitHub Actions Runner Sample
+# GitHub Actions Runner Sample (Aリポジトリ)
 
 このリポジトリは、外部リポジトリに定義されたカスタム GitHub Action を実行するサンプルです。
 
