@@ -11,7 +11,7 @@ jobs:
         id: custom_action
         uses: rendya2501/gh-actions-custom-action-sample@main
         with:
-          message: "Hello from A repository!"
+          message: "A repository Payload"
 
       - name: Echo the result from B repository
         run: |
