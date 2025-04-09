@@ -17,4 +17,5 @@ jobs:
         run: |
           echo "Received script output: ${{ steps.custom_action.outputs.script_result }}"
           echo "Received echo output: ${{ steps.custom_action.outputs.echo_result }}"
+          echo "Received csharp output: ${{ steps.custom_action.outputs.csharp_result }}"
         # run: 'echo "Receided output: ${{ steps.custom_action.outputs.result }}"'
