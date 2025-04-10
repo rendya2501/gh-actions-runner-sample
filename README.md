@@ -33,7 +33,7 @@ jobs:
         id: custom_action
         uses: rendya2501/gh-actions-custom-action-sample@main
         with:
-          message: "A repository Payload"
+          message: "A repository Payload" #送信メッセージ
 
       - name: Echo the result from B repository
         run: |
