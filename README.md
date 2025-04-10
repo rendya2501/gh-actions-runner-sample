@@ -45,10 +45,4 @@ jobs:
 ## ✅ 実行結果
 ワークフロー実行後、ログには以下のように表示されます。
 
-```
-Received script output: Script Processed: A repository Payload
-Received echo output: Echo Processed: A repository Payload (hogehoge)
-Received csharp output: csharp Processed:Hello from repository B!:A repository Payload
-```
-
-![image](https://github.com/user-attachments/assets/8d5feda0-e7de-4cf5-93e2-387002f71019)
+![image](https://github.com/user-attachments/assets/30019a3d-23c9-43d7-a86c-7ed1456d1148)
